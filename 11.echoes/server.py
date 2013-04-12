@@ -30,5 +30,5 @@ class EchoServer(asyncore.dispatcher):
         for handler in self.handlers:
             handler.send(data)
 
-server = EchoServer('localhost', 8080)
+server = EchoServer('chat.pymunage.local', 8080)
 asyncore.loop()
